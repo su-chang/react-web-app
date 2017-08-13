@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import LocalStore from '../util/localStore'
 import { CITYNAME } from '../config/localStoreKey'
-import * as userInfoActionsFromOtherFile from '../actions/userinfo' 
+import * as userInfoActionsFromOtherFile from '../redux/actions/userinfo'
 
 class App extends React.Component {
     constructor(props, context) {

@@ -1,6 +1,8 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as userInfoActionsFromOtherFile from '../../redux/actions/userinfo'
 import { hashHistory } from 'react-router'
 import Header from '../../components/Header'
 import LoginComponent from '../../components/Login'
@@ -74,7 +76,9 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return {}
+    return {
+        userInfoActions: bindActionCreators(userInfoActionsFromOtherFile, dispatch),
+    }
 }
 export default connect(
     mapStateToProps,

@@ -9,3 +9,8 @@ export function getListData(city, page) {
     const result = get('/api/homelist/' + encodeURIComponent(city) + '/' + page);
     return result;
 }
+
+export function getSearchData(category, keyword) {
+    const result = get('/api/search/' + encodeURIComponent(category) + '/' + keyword);
+    return result;
+}

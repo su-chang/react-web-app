@@ -1,8 +1,9 @@
-import React from 'react'
-import PureRenderMixin from 'react-addons-pure-render-mixin'
-import Header from '../../components/Header'
-import Info from './subpage/Info'
-import Comment from './subpage/Comment'
+import React from 'react';
+import PureRenderMixin from 'react-addons-pure-render-mixin';
+import Header from '../../components/Header';
+import Buy from './subpage/Buy';
+import Info from './subpage/Info';
+import Comment from './subpage/Comment';
 
 class Detail extends React.Component {
     constructor(props, context) {
@@ -15,6 +16,7 @@ class Detail extends React.Component {
             <div>
                 <Header title="商户信息"/>
                 <Info id={ id }/>
+                <Buy id={ id }/>
                 <Comment id={ id }/>
             </div>
         )

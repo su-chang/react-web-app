@@ -42,7 +42,7 @@ class Login extends React.Component {
         const router = this.props.params.router;
 
         if(router) {
-            history.push(router);
+            hashHistory.push(router);
         } else {
             this.goUserPage();
         }

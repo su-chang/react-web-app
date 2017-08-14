@@ -28,7 +28,6 @@ class Ad extends React.Component {
         result.then(res => {
             return res.json()
         }).then(json => {
-            console.log('The json is:', json);
             // 处理获取的数据
             const data = json
             if (data.length) {
